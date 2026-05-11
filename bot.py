@@ -21,7 +21,7 @@ from telegram.ext import Application, CommandHandler, ContextTypes
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 
 BOT_TOKEN = os.getenv("8672236452:AAED45zNAWTyjTeZ1FBHdPZpfsrPsV1abmk")
-CHAT_ID = os.getenv("5373263577")
+CHAT_ID = os.getenv("761179335")
 
 DEFAULT_PAIR = os.getenv("PAIR", "EURJPY=X")
 INTERVAL = os.getenv("INTERVAL", "1m")
