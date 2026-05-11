@@ -1,3 +1,18 @@
+from flask import Flask
+from threading import Thread
+
+app_web = Flask('')
+
+@app_web.route('/')
+def home():
+    return "Bot Running"
+
+def run():
+    app_web.run(host='0.0.0.0', port=8080)
+
+def keep_alive():
+    t = Thread(target=run)
+    t.start()
 import os
 import pandas as pd
 import yfinance as yf
